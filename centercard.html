@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="stylesheet" href="centercard.css">
+  </head>
+  <style media="screen">
+    
+   
+  </style>
+  <body>
+
+                   <h3>Analytics</h3>
+                   <div class="flex-container main_cards">
+                     <div class="cards">
+                          <div class="card_details">
+                           <p id="heading" >Total Sales 
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;margin-left:120px">more_vert</i></p>
+                            <p><strong>&#36; 98.99</strong> <i class="material-icons" style="color: green;font-size: 20px;padding-left:80px">arrow_upward</i>
+                            <span  style="color: green;padding-left: 15px">2.6%</span></p>
+                           <p id="heading">Sales Over Time</p>
+                           <script type="text/javascript">
+
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: ""
+		},
+		data: [
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "line",
+			dataPoints: [
+				{ label: "",  y: 10  },
+				{ label: "", y: 15  },
+				{ label: "", y: 25  },
+				{ label: "",  y: 30  },
+				{ label: "",  y: 28  }
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+
+
+<div id="chartContainer" style="height: 200px; width: 80%; margin: 2%"></div>
+
+                          </div>
+                     </div>
+
+                     <div class="cards">
+
+                          <div class="card_details">
+                           <p id="heading">Repeat Customer Rate
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:40px">more_vert</i></p>
+                             <p><strong>5.45 %</strong> <i class="material-icons" style="color: green;font-size: 20px;padding-left:80px">arrow_upward</i>
+                              <span  style="color: green;padding-left: 15px">2.6%</span></p>
+                           <p id="heading">Customers</p>
+                          </div>
+
+                     </div>
+
+                     <div class="cards">
+
+                          <div class="card_details">
+                           <p id="heading">Total Online Stores Visitors
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:10px">more_vert</i></p>
+                             <p><strong>452</strong> <i class="material-icons" style="color:red;font-size: 20px;padding-left:80px">arrow_downward</i>
+                              <span  style="color:red;padding-left: 15px">9.6%</span></p>
+                           <p id="heading">Visitors Over Time</p>
+
+
+<div id="chartContainer" style="height: 200px; width: 80%; margin: 2%"></div>
+                          </div>
+                     </div>
+
+                     <div class="cards">
+
+                          <div class="card_details">
+                           <p id="heading">Online Store Conversion Rate
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:5px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:2px">more_vert</i></p>
+                             <p><strong>5.64%</strong> <i class="material-icons" style="color:green;font-size: 20px;padding-left:80px">arrow_upward</i>
+                              <span  style="color:green;padding-left: 15px">3.6%</span></p>
+                           <p id="heading">Conversion Funnel</p>
+                           <p><strong>Added to Cart <script type="text/javascript">
+                            var a = [148,153,151];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                            
+                          </script></strong>
+                        <i class="material-icons" style="color:green;font-size: 20px;padding-right:10px">arrow_upward</i></p> 
+                          <p id="heading">5 visits</p>
+    
+                          <p><strong>Reached Checkout <script type="text/javascript">
+                            var a = [78,56,89,2];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></strong>
+                          <i class="material-icons" style="color:green;font-size: 20px;padding-right:10px">arrow_upward</i></p><p id="heading">5 visits</p>
+                          <p><strong>purched <script type="text/javascript">
+                            var a = [17,856,931];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></strong> 
+                          <i class="material-icons" style="color:green;font-size: 20px;padding-right:10px">arrow_upward</i></p> 
+                          <p id="heading">4 visits</p>
+  
+                          </div>
+
+                     </div>
+
+                     <div class="cards ">
+
+                          <div class="card_details">
+                           <p id="heading">Online Store Visits by Location
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:5px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:10px">more_vert</i></p>
+                           <p >United States <script type="text/javascript">
+                            var a = [148,153,151];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+    
+                          <p>Canada <script type="text/javascript">
+                            var a = [78,56,89,2];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>Germany<script type="text/javascript">
+                            var a = [17,856,931];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>France <script type="text/javascript">
+                            var a = [148,15,58,624];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>China <script type="text/javascript">
+                            var a = [148,11,456,8];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                            <p>Japan<script type="text/javascript">
+                              var a = [78,56,89,2];
+                              var s=0;
+                              var avg=0;
+                              var len = a.length;
+                              for(var i=0;i<len;i++)
+                              {
+                                s+=a[i];
+                              }
+                              avg=s/len;
+                              document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                            </script></p>
+                          </div>
+
+                     </div>
+
+                     <div class="cards">
+                          <div class="card_details">
+                           <p id="heading">Average Order Value
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:10px">more_vert</i></p>
+                           <p id="heading">Visitors Over Time</p>
+
+                           <div class="">
+
+                           </div>
+
+
+<div id="chartContainer" style="height: 200px; width: 80%; margin: 20%"></div>
+                          </div>
+
+                     </div>
+
+                     <div class="cards">
+                          <div class="card_details">
+                           <p id="heading">Online Store Visits From Social
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:10px">more_vert</i></p>
+                           <p>Facebook <script type="text/javascript">
+                            var a = [148,153,151];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p class="att_name">Twitter <script type="text/javascript">
+                            var a = [15,2,3,569,7];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>Instagram <script type="text/javascript">
+                            var a = [78,56,89,2];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>Pinterest <script type="text/javascript">
+                            var a = [17,856,931];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>Reddit <script type="text/javascript">
+                            var a = [148,15,58,624];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          <p>Youtube <script type="text/javascript">
+                            var a = [148,11,456,8];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script></p>
+                          </div>
+
+                     </div>
+
+                     <div class="cards">
+                          <div class="card_details">
+                           <p id="heading">Total Orders
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:10px">more_vert</i></p>
+                           <p id="heading">Orders Over Time</p>
+
+<div id="chartContainer" style="height: 200px; width: 80%; margin: 2%"></div>
+                         </div>
+                     </div>
+
+                     <div class="cards">
+                          <div class="card_details">
+                           <p id="heading">Online Store Visits by Source
+                             <i class="material-icons" style="color: lightgrey;font-size: 15px;padding-left:10px">help</i>
+                             <i class="material-icons" style="color: lightgrey;font-size: 25px;padding-left:10px">more_vert</i>
+                            </p>
+                           <p id="heading">Sales Over Time</p>
+                           <p>Direct Source <script type="text/javascript">
+                            var a = [148,153,151];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script>
+                          <i class="material-icons" style="color: green">arrow_upward</i></p>
+    
+                          <p>Search <script type="text/javascript">
+                            var a = [78,56,89,2];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script><i class="material-icons" style="color:red">arrow_upward</i></p>
+                          <p>Social<script type="text/javascript">
+                            var a = [17,856,931];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script><i class="material-icons" style="color: green">arrow_upward</i></p>
+                          <p>Referrals <script type="text/javascript">
+                            var a = [148,15,58,624];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script><i class="material-icons" style="color: green">arrow_upward</i></p>
+                          <p>Email <script type="text/javascript">
+                            var a = [148,11,456,8];
+                            var s=0;
+                            var avg=0;
+                            var len = a.length;
+                            for(var i=0;i<len;i++)
+                            {
+                              s+=a[i];
+                            }
+                            avg=s/len;
+                            document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                          </script><i class="material-icons" style="color:red">arrow_upward</i></p>
+                            <p>Other<script type="text/javascript">
+                              var a = [78,56,89,2];
+                              var s=0;
+                              var avg=0;
+                              var len = a.length;
+                              for(var i=0;i<len;i++)
+                              {
+                                s+=a[i];
+                              }
+                              avg=s/len;
+                              document.write(s+' '+Math.round(avg * 10) / 10+"%");
+                            </script><i class="material-icons" style="color: green">arrow_upward</i></p>
+                          </div>
+
+                     </div>
+
+                   </div>
+
+
+  </body>
+</html>
